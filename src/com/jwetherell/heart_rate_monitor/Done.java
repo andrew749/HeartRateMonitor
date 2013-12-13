@@ -1,9 +1,11 @@
 package com.jwetherell.heart_rate_monitor;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.AttributeSet;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -20,8 +22,10 @@ import org.achartengine.renderer.XYSeriesRenderer;
  */
 public class Done extends Activity {
     XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
-    public static GraphicalView graphicalView;
+    public GraphicalView graphicalView;
     static XYSeries series = new XYSeries("heart rate");
+    Button restart;
+
     private XYMultipleSeriesRenderer getDemoRenderer() {
         XYMultipleSeriesRenderer renderer = new XYMultipleSeriesRenderer();
         renderer.setAxisTitleTextSize(16);
@@ -43,19 +47,33 @@ public class Done extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     setContentView(R.layout.donelayout);
-int i=0;
-        TextView tv=(TextView)findViewById(R.id.tv);
-        Bundle b=getIntent().getExtras().getBundle("rates");
-        double[] rates=b.getDoubleArray("ratesbundle");
-        for(double r: rates){
-            tv.append(r+"\n");
-            series.add(i,r);
+        setContentView(R.layout.donelayout);
+        int i = 0;
+        restart = (Button) findViewById(R.id.restart);
+        restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                restartTest();
+            }
+        });
+        TextView tv = (TextView) findViewById(R.id.tv);
+        Bundle b = getIntent().getExtras().getBundle("rates");
+        double[] rates = b.getDoubleArray("ratesbundle");
+        for (double r : rates) {
+            tv.append(r + "\n");
+            series.add(i, r);
             i++;
         }
         dataset.addSeries(series);
         graphicalView = ChartFactory.getScatterChartView(this, dataset, getDemoRenderer());
         LinearLayout layout = (LinearLayout) findViewById(R.id.lll);
         layout.addView(graphicalView);
+    }
+
+    private void restartTest() {
+        Intent intent = new Intent();
+        intent.setClass(getApplicationContext(), HeartRateMonitor.class);
+        startActivity(intent);
+        this.finish();
     }
 }

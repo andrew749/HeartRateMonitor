@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -34,10 +35,24 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 
 /**
+ * Copyright 2013 Andrew749 Productions
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  * This class extends Activity to handle a picture preview, process the preview
  * for a red values and determine a heart beat.
- * 
- * @author Justin Wetherell <phishman3579@gmail.com>
+ * <p/>
+ * Base code was pulled from Google Code and the original author was
+ * Justin Wetherell <phishman3579@gmail.com>
  */
 public class HeartRateMonitor extends Activity {
 
@@ -59,7 +74,9 @@ public class HeartRateMonitor extends Activity {
 
     public static enum TYPE {
         GREEN, RED
-    };
+    }
+
+    ;
 
     private static TYPE currentType = TYPE.GREEN;
 
@@ -78,6 +95,7 @@ public class HeartRateMonitor extends Activity {
     public static Context c;
     XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
     static int count;
+    private Button stopRecording;
 
     /**
      * {@inheritDoc}
@@ -111,6 +129,7 @@ public class HeartRateMonitor extends Activity {
         LinearLayout layout = (LinearLayout) findViewById(R.id.graphlayout);
         layout.addView(graphicalView);
 
+        stopRecording = (Button) findViewById(R.id.stop);
 
         preview = (SurfaceView) findViewById(R.id.preview);
         previewHolder = preview.getHolder();
@@ -122,7 +141,13 @@ public class HeartRateMonitor extends Activity {
 
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK, "DoNotDimScreen");
-
+        stopRecording.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchDoneActivity(getApplicationContext());
+                finish();
+            }
+        });
     }
 
     /**
@@ -160,7 +185,6 @@ public class HeartRateMonitor extends Activity {
         camera.stopPreview();
         camera.release();
         camera = null;
-        writeFile();
     }
 
     @Override
@@ -176,8 +200,10 @@ public class HeartRateMonitor extends Activity {
         try {
             if (!file.exists()) {
                 file.createNewFile();
+
             }
-            stream = new FileOutputStream(file);
+
+            stream = new FileOutputStream(file, true);
             PrintStream ps = new PrintStream(stream);
             ps.print("Subject\n");
 
@@ -187,6 +213,7 @@ public class HeartRateMonitor extends Activity {
             }
             stream.flush();
             stream.close();
+            Log.d("Success", "Printed values to text file");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -194,19 +221,21 @@ public class HeartRateMonitor extends Activity {
     }
 
     public static double[] getRates() {
-        double[] values = new double[3];
+        double[] values = new double[nofdpoints];
         for (int i = 0; i < series.getItemCount(); i++) {
             values[i] = series.getY(i);
         }
         return values;
     }
 
-    public static void launchdoneactivity(Context c) {
+    public static void launchDoneActivity(Context c) {
         Intent i = new Intent();
+
         i.setClass(c, Done.class);
         Bundle bundle = new Bundle();
         bundle.putDoubleArray("ratesbundle", getRates());
         i.putExtra("rates", bundle);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         writeFile();
         c.startActivity(i);
     }
@@ -219,6 +248,7 @@ public class HeartRateMonitor extends Activity {
 
         @Override
         public void onPreviewFrame(byte[] data, Camera cam) {
+
             if (data == null) throw new NullPointerException();
             Camera.Size size = cam.getParameters().getPreviewSize();
             if (size == null) throw new NullPointerException();
@@ -234,10 +264,7 @@ public class HeartRateMonitor extends Activity {
                 processing.set(false);
                 return;
             }
-            if (count >= 3) {
-                //launch activity
-                launchdoneactivity(c);
-            }
+
             int averageArrayAvg = 0;
             int averageArrayCnt = 0;
             for (int i = 0; i < averageArray.length; i++) {
@@ -308,6 +335,7 @@ public class HeartRateMonitor extends Activity {
             }
             processing.set(false);
         }
+
     };
 
     private static SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
