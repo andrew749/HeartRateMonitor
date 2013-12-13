@@ -34,10 +34,24 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 
 /**
+ * Copyright 2013 Andrew749 Productions
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  * This class extends Activity to handle a picture preview, process the preview
  * for a red values and determine a heart beat.
- * 
- * @author Justin Wetherell <phishman3579@gmail.com>
+ * <p/>
+ * Base code was pulled from Google Code and the original author was
+ * Justin Wetherell <phishman3579@gmail.com>
  */
 public class HeartRateMonitor extends Activity {
 
@@ -56,10 +70,13 @@ public class HeartRateMonitor extends Activity {
     private static final int averageArraySize = 4;
     private static final int[] averageArray = new int[averageArraySize];
 
+    private final static int NUMBER_OF_TESTS = 3;
 
     public static enum TYPE {
         GREEN, RED
-    };
+    }
+
+    ;
 
     private static TYPE currentType = TYPE.GREEN;
 
@@ -160,7 +177,6 @@ public class HeartRateMonitor extends Activity {
         camera.stopPreview();
         camera.release();
         camera = null;
-        writeFile();
     }
 
     @Override
@@ -176,8 +192,10 @@ public class HeartRateMonitor extends Activity {
         try {
             if (!file.exists()) {
                 file.createNewFile();
+
             }
-            stream = new FileOutputStream(file);
+
+            stream = new FileOutputStream(file, true);
             PrintStream ps = new PrintStream(stream);
             ps.print("Subject\n");
 
@@ -187,6 +205,7 @@ public class HeartRateMonitor extends Activity {
             }
             stream.flush();
             stream.close();
+            Log.d("Success", "Printed values to text file");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -203,12 +222,14 @@ public class HeartRateMonitor extends Activity {
 
     public static void launchdoneactivity(Context c) {
         Intent i = new Intent();
+
         i.setClass(c, Done.class);
         Bundle bundle = new Bundle();
         bundle.putDoubleArray("ratesbundle", getRates());
         i.putExtra("rates", bundle);
         writeFile();
         c.startActivity(i);
+
     }
 
     private static PreviewCallback previewCallback = new PreviewCallback() {
@@ -219,7 +240,11 @@ public class HeartRateMonitor extends Activity {
 
         @Override
         public void onPreviewFrame(byte[] data, Camera cam) {
-            if (data == null) throw new NullPointerException();
+            if (count >= NUMBER_OF_TESTS) {
+                //launch activity
+                launchdoneactivity(c);
+            } else {
+                if (data == null) throw new NullPointerException();
             Camera.Size size = cam.getParameters().getPreviewSize();
             if (size == null) throw new NullPointerException();
 
@@ -234,11 +259,8 @@ public class HeartRateMonitor extends Activity {
                 processing.set(false);
                 return;
             }
-            if (count >= 3) {
-                //launch activity
-                launchdoneactivity(c);
-            }
-            int averageArrayAvg = 0;
+
+                int averageArrayAvg = 0;
             int averageArrayCnt = 0;
             for (int i = 0; i < averageArray.length; i++) {
                 if (averageArray[i] > 0) {
@@ -307,6 +329,7 @@ public class HeartRateMonitor extends Activity {
                 beats = 0;
             }
             processing.set(false);
+            }
         }
     };
 

@@ -3,7 +3,6 @@ package com.jwetherell.heart_rate_monitor;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -20,8 +19,9 @@ import org.achartengine.renderer.XYSeriesRenderer;
  */
 public class Done extends Activity {
     XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
-    public static GraphicalView graphicalView;
+    public GraphicalView graphicalView;
     static XYSeries series = new XYSeries("heart rate");
+
     private XYMultipleSeriesRenderer getDemoRenderer() {
         XYMultipleSeriesRenderer renderer = new XYMultipleSeriesRenderer();
         renderer.setAxisTitleTextSize(16);
@@ -43,14 +43,14 @@ public class Done extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     setContentView(R.layout.donelayout);
-int i=0;
-        TextView tv=(TextView)findViewById(R.id.tv);
-        Bundle b=getIntent().getExtras().getBundle("rates");
-        double[] rates=b.getDoubleArray("ratesbundle");
-        for(double r: rates){
-            tv.append(r+"\n");
-            series.add(i,r);
+        setContentView(R.layout.donelayout);
+        int i = 0;
+        TextView tv = (TextView) findViewById(R.id.tv);
+        Bundle b = getIntent().getExtras().getBundle("rates");
+        double[] rates = b.getDoubleArray("ratesbundle");
+        for (double r : rates) {
+            tv.append(r + "\n");
+            series.add(i, r);
             i++;
         }
         dataset.addSeries(series);
