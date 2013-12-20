@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -70,7 +71,6 @@ public class HeartRateMonitor extends Activity {
     private static final int averageArraySize = 4;
     private static final int[] averageArray = new int[averageArraySize];
 
-    private final static int NUMBER_OF_TESTS = 3;
 
     public static enum TYPE {
         GREEN, RED
@@ -95,6 +95,13 @@ public class HeartRateMonitor extends Activity {
     public static Context c;
     XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
     static int count;
+    private Button stopRecording;
+    public static final int CHART_AXIS_TITLE_SIZE = 50;
+    public static final int CHART_TITLE_SIZE = 100;
+    public static final int CHART_LABELS_TEXT_SIZE = 30;
+    public static final int CHART_LEGEND_TEXT_SIZE = 50;
+    public static final float CHART_POINT_SIZE = 10f;
+
 
     /**
      * {@inheritDoc}
@@ -102,11 +109,11 @@ public class HeartRateMonitor extends Activity {
 
     private XYMultipleSeriesRenderer getDemoRenderer() {
         XYMultipleSeriesRenderer renderer = new XYMultipleSeriesRenderer();
-        renderer.setAxisTitleTextSize(16);
-        renderer.setChartTitleTextSize(20);
-        renderer.setLabelsTextSize(15);
-        renderer.setLegendTextSize(15);
-        renderer.setPointSize(5f);
+        renderer.setAxisTitleTextSize(HeartRateMonitor.CHART_AXIS_TITLE_SIZE);
+        renderer.setChartTitleTextSize(HeartRateMonitor.CHART_TITLE_SIZE);
+        renderer.setLabelsTextSize(HeartRateMonitor.CHART_LABELS_TEXT_SIZE);
+        renderer.setLegendTextSize(HeartRateMonitor.CHART_LEGEND_TEXT_SIZE);
+        renderer.setPointSize(HeartRateMonitor.CHART_POINT_SIZE);
         renderer.setMargins(new int[]{20, 30, 15, 0});
         XYSeriesRenderer r = new XYSeriesRenderer();
         r.setColor(Color.BLUE);
@@ -128,6 +135,7 @@ public class HeartRateMonitor extends Activity {
         LinearLayout layout = (LinearLayout) findViewById(R.id.graphlayout);
         layout.addView(graphicalView);
 
+        stopRecording = (Button) findViewById(R.id.stop);
 
         preview = (SurfaceView) findViewById(R.id.preview);
         previewHolder = preview.getHolder();
@@ -139,7 +147,13 @@ public class HeartRateMonitor extends Activity {
 
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK, "DoNotDimScreen");
-
+        stopRecording.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchDoneActivity(getApplicationContext());
+                finish();
+            }
+        });
     }
 
     /**
@@ -213,23 +227,23 @@ public class HeartRateMonitor extends Activity {
     }
 
     public static double[] getRates() {
-        double[] values = new double[3];
+        double[] values = new double[nofdpoints];
         for (int i = 0; i < series.getItemCount(); i++) {
             values[i] = series.getY(i);
         }
         return values;
     }
 
-    public static void launchdoneactivity(Context c) {
+    public static void launchDoneActivity(Context c) {
         Intent i = new Intent();
 
         i.setClass(c, Done.class);
         Bundle bundle = new Bundle();
         bundle.putDoubleArray("ratesbundle", getRates());
         i.putExtra("rates", bundle);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         writeFile();
         c.startActivity(i);
-
     }
 
     private static PreviewCallback previewCallback = new PreviewCallback() {
@@ -240,11 +254,8 @@ public class HeartRateMonitor extends Activity {
 
         @Override
         public void onPreviewFrame(byte[] data, Camera cam) {
-            if (count >= NUMBER_OF_TESTS) {
-                //launch activity
-                launchdoneactivity(c);
-            } else {
-                if (data == null) throw new NullPointerException();
+
+            if (data == null) throw new NullPointerException();
             Camera.Size size = cam.getParameters().getPreviewSize();
             if (size == null) throw new NullPointerException();
 
@@ -260,7 +271,7 @@ public class HeartRateMonitor extends Activity {
                 return;
             }
 
-                int averageArrayAvg = 0;
+            int averageArrayAvg = 0;
             int averageArrayCnt = 0;
             for (int i = 0; i < averageArray.length; i++) {
                 if (averageArray[i] > 0) {
@@ -329,8 +340,8 @@ public class HeartRateMonitor extends Activity {
                 beats = 0;
             }
             processing.set(false);
-            }
         }
+
     };
 
     private static SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
