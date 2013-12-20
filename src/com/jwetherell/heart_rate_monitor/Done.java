@@ -28,11 +28,11 @@ public class Done extends Activity {
 
     private XYMultipleSeriesRenderer getDemoRenderer() {
         XYMultipleSeriesRenderer renderer = new XYMultipleSeriesRenderer();
-        renderer.setAxisTitleTextSize(16);
-        renderer.setChartTitleTextSize(20);
-        renderer.setLabelsTextSize(15);
-        renderer.setLegendTextSize(15);
-        renderer.setPointSize(5f);
+        renderer.setAxisTitleTextSize(HeartRateMonitor.CHART_AXIS_TITLE_SIZE);
+        renderer.setChartTitleTextSize(HeartRateMonitor.CHART_TITLE_SIZE);
+        renderer.setLabelsTextSize(HeartRateMonitor.CHART_LABELS_TEXT_SIZE);
+        renderer.setLegendTextSize(HeartRateMonitor.CHART_LEGEND_TEXT_SIZE);
+        renderer.setPointSize(HeartRateMonitor.CHART_POINT_SIZE);
         renderer.setMargins(new int[]{20, 30, 15, 0});
         XYSeriesRenderer r = new XYSeriesRenderer();
         r.setColor(Color.BLUE);
