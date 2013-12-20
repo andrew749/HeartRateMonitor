@@ -20,12 +20,14 @@ import org.achartengine.renderer.XYSeriesRenderer;
 /**
  * Created by andrew on 12/12/13.
  */
+
 public class Done extends Activity {
     XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
     public GraphicalView graphicalView;
     static XYSeries series = new XYSeries("heart rate");
     Button restart;
 
+    //sets all of the options for the renderer
     private XYMultipleSeriesRenderer getDemoRenderer() {
         XYMultipleSeriesRenderer renderer = new XYMultipleSeriesRenderer();
         renderer.setAxisTitleTextSize(HeartRateMonitor.CHART_AXIS_TITLE_SIZE);
