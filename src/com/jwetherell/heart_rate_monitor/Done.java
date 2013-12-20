@@ -26,6 +26,7 @@ public class Done extends Activity {
     public GraphicalView graphicalView;
     static XYSeries series = new XYSeries("heart rate");
     Button restart;
+    double total=0;
 
     //sets all of the options for the renderer
     private XYMultipleSeriesRenderer getDemoRenderer() {
@@ -65,7 +66,9 @@ public class Done extends Activity {
             tv.append(r + "\n");
             series.add(i, r);
             i++;
+            total+=r;
         }
+        tv.append("Average: "+ total/i );
         dataset.addSeries(series);
         graphicalView = ChartFactory.getScatterChartView(this, dataset, getDemoRenderer());
         LinearLayout layout = (LinearLayout) findViewById(R.id.lll);
