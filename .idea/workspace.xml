@@ -16,11 +16,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="a21d4b20-4e24-4ab6-a547-e941829cf452" name="Default" comment="Merge branch 'stoprecording'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;res/layout/donelayout.xml&#10;&#9;res/layout/main.xml&#10;&#9;src/com/jwetherell/heart_rate_monitor/Done.java&#10;&#9;src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/jwetherell/heart_rate_monitor/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/jwetherell/heart_rate_monitor/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/Done.java" afterPath="$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/Done.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java" afterPath="$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java" />
+    <list default="true" readonly="true" id="a21d4b20-4e24-4ab6-a547-e941829cf452" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heart Rate Monitor.iml" afterPath="$PROJECT_DIR$/Heart Rate Monitor.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Heart Rate Monitor.iws" />
@@ -88,13 +87,8 @@
       <file leaf-file-name="HeartRateMonitor.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="345" column="41" selection-start="11411" selection-end="11411" vertical-scroll-proportion="-1.9537672" vertical-offset="5611" max-vertical-offset="6330">
-              <folding>
-                <element signature="e#13926#14191#0" expanded="true" />
-                <element signature="e#14031#14165#0" expanded="true" />
-                <element signature="e#14146#14147#0" expanded="true" />
-                <element signature="e#14180#14181#0" expanded="true" />
-              </folding>
+            <state line="345" column="41" selection-start="11411" selection-end="11411" vertical-scroll-proportion="5.515807" vertical-offset="1305" max-vertical-offset="6510">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,7 +96,7 @@
       <file leaf-file-name="Done.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/Done.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="5" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1050">
+            <state line="82" column="5" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -114,6 +108,10 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Documents/keystore" />
+    <option name="KEY_ALIAS" value="acod" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,10 +125,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-3" />
-    <option name="width" value="1928" />
-    <option name="height" value="1055" />
+    <option name="x" value="-2" />
+    <option name="width" value="1924" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -158,8 +155,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,6 +224,13 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/keystore" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ExportedModule" value="Heart Rate Monitor" />
+    <property name="ExportedApkPath" value="$PROJECT_DIR$/Heart Rate Monitor.apk" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
   </component>
   <component name="RunManager" selected="Android Application.heart rate monitor">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -407,11 +411,16 @@
       <created>1387513187285</created>
       <updated>1387513187285</updated>
     </task>
+    <task id="LOCAL-00001" summary="added a tone so that can arbitratily tell amount of tests">
+      <created>1387578380776</created>
+      <updated>1387578380776</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-3" width="1928" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="-2" y="0" width="1924" height="1057" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -423,15 +432,15 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -452,6 +461,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="added a tone so that can arbitratily tell amount of tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a tone so that can arbitratily tell amount of tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -459,13 +470,36 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="345" column="41" selection-start="11411" selection-end="11411" vertical-scroll-proportion="0.0" vertical-offset="5175" max-vertical-offset="6510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/Done.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="5" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="345" column="41" selection-start="11411" selection-end="11411" vertical-scroll-proportion="0.0" vertical-offset="5175" max-vertical-offset="6510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/Done.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="5" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="5670">
-          <folding>
-            <element signature="e#13926#14191#0" expanded="true" />
-            <element signature="e#14031#14165#0" expanded="true" />
-            <element signature="e#14146#14147#0" expanded="true" />
-            <element signature="e#14180#14181#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -476,18 +510,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java">
+    <entry file="file://$PROJECT_DIR$/project.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="345" column="41" selection-start="11411" selection-end="11411" vertical-scroll-proportion="-1.9537672" vertical-offset="5611" max-vertical-offset="6330">
-          <folding>
-            <element signature="e#13926#14191#0" expanded="true" />
-            <element signature="e#14031#14165#0" expanded="true" />
-            <element signature="e#14146#14147#0" expanded="true" />
-            <element signature="e#14180#14181#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jwetherell/heart_rate_monitor/HeartRateMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="345" column="41" selection-start="11411" selection-end="11411" vertical-scroll-proportion="5.515807" vertical-offset="1305" max-vertical-offset="6510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android API 19 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Heart Rate Monitor</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>achartengine-1.1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

@@ -1,4 +1,5 @@
-package com.jwetherell.heart_rate_monitor;
+package com.andrew749.heart_rate_monitor;
+
 
 import android.content.Context;
 import android.graphics.Bitmap;

@@ -1,9 +1,8 @@
-package com.jwetherell.heart_rate_monitor;
+package com.andrew749.heart_rate_monitor;
 
 /**
  * This abstract class is used to process images.
  *
- * @author Justin Wetherell <phishman3579@gmail.com>
  */
 public abstract class ImageProcessing {
 

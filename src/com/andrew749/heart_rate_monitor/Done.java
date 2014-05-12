@@ -1,4 +1,4 @@
-package com.jwetherell.heart_rate_monitor;
+package com.andrew749.heart_rate_monitor;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import org.achartengine.model.XYMultipleSeriesDataset;
 import org.achartengine.model.XYSeries;
 import org.achartengine.renderer.XYMultipleSeriesRenderer;
 import org.achartengine.renderer.XYSeriesRenderer;
+
 
 /**
  * Created by andrew on 12/12/13.

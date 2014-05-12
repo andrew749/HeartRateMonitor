@@ -1,4 +1,4 @@
-package com.jwetherell.heart_rate_monitor;
+package com.andrew749.heart_rate_monitor;
 
 import android.app.Activity;
 import android.content.Context;
