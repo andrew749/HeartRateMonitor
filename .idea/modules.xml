@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Heart Rate Monitor.iml" filepath="$PROJECT_DIR$/Heart Rate Monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeartRateMonitor.iml" filepath="$PROJECT_DIR$/HeartRateMonitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cardlibrary/cardlibrary.iml" filepath="$PROJECT_DIR$/cardlibrary/cardlibrary.iml" />
     </modules>
   </component>
 </project>

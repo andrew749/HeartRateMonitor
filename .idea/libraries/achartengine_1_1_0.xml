@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="achartengine-1.1.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/achartengine-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/achartengine-1.1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

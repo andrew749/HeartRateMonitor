@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="CustomTutorialTheme" parent="Base.Theme.AppCompat">
+        <item name="android:background">#FFF</item>
+        <item name="android:buttonStyle">@style/custombuttontheme</item>
+        <item name="android:textColor">#000</item>
+
+    </style>
+
+    <style name="custombuttontheme" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">#33B5E5</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

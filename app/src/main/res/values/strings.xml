@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_text">--</string>
+    <string name="app_name">HeartRateMonitor</string>
+    <string name="mainbutton_quick">Quick Measurement</string>
+    <string name="mainbutton_history">History</string>
+</resources>

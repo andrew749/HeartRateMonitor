@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/cardlibrary/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/cardlibrary/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">TutorialCardLibrary</string>
+    <string name="finish">Finish</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="nextbutton">Next</string>
+    <string name="previousbutton">Previous</string>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/cardlibrary/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="CustomTutorialTheme" parent="Base.Theme.AppCompat">
+        <item name="android:background">#FFF</item>
+        <item name="android:buttonStyle">@style/custombuttontheme</item>
+        <item name="android:textColor">#000</item>
+
+    </style>
+    <style name="custombuttontheme" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">#33B5E5</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>
