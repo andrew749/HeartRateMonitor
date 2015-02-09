@@ -956,6 +956,10 @@
         <item name="android:textColor">#000</item>
 
     </style>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="MainStyle" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    </style>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">

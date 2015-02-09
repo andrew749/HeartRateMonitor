@@ -15,6 +15,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -58,7 +59,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Base code was pulled from Google Code and the original author was
  * Justin Wetherell <phishman3579@gmail.com>
  */
-public class HeartRateMonitor extends Activity {
+public class HeartRateMonitor extends ActionBarActivity {
 
     private static final String TAG = "HeartRateMonitor";
     private static final AtomicBoolean processing = new AtomicBoolean(false);
