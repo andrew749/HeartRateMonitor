@@ -3,8 +3,10 @@
     android:shape="rectangle">
     <corners android:radius="10dp"></corners>
     <padding
-        android:bottom="10dp"
-        android:top="10dp"></padding>
+        android:bottom="@dimen/button_top_padding"
+        android:top="@dimen/button_top_padding"
+        android:left="@dimen/button_side_padding"
+        android:right="@dimen/button_side_padding"></padding>
     <stroke android:color="@color/blue"></stroke>
     <solid android:color="@color/white"></solid>
 </shape>

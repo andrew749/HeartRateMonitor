@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <stroke android:color="@color/white"></stroke>
+    <padding
+        android:bottom="@dimen/button_top_padding"
+        android:left="@dimen/button_side_padding"
+        android:right="@dimen/button_side_padding"
+        android:top="@dimen/button_top_padding"></padding>
     <solid android:color="@color/blue"></solid>
     <corners android:radius="10dp"></corners>
 </shape><!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/drawable/custom_home_button_selected.xml -->

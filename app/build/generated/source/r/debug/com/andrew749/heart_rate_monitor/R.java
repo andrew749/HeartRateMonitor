@@ -1242,12 +1242,14 @@ containing a value of this type.
         public static final int abc_text_size_title_material_toolbar=0x7f070024;
         public static final int activity_horizontal_margin=0x7f070025;
         public static final int activity_vertical_margin=0x7f070026;
-        public static final int dialog_fixed_height_major=0x7f070027;
-        public static final int dialog_fixed_height_minor=0x7f070028;
-        public static final int dialog_fixed_width_major=0x7f070029;
-        public static final int dialog_fixed_width_minor=0x7f07002a;
-        public static final int disabled_alpha_material_dark=0x7f07002b;
-        public static final int disabled_alpha_material_light=0x7f07002c;
+        public static final int button_side_padding=0x7f070027;
+        public static final int button_top_padding=0x7f070028;
+        public static final int dialog_fixed_height_major=0x7f070029;
+        public static final int dialog_fixed_height_minor=0x7f07002a;
+        public static final int dialog_fixed_width_major=0x7f07002b;
+        public static final int dialog_fixed_width_minor=0x7f07002c;
+        public static final int disabled_alpha_material_dark=0x7f07002d;
+        public static final int disabled_alpha_material_light=0x7f07002e;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;

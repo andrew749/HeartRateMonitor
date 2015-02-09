@@ -1,1 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
+build
+app/build
+.idea
+.settings

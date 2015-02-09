@@ -135,6 +135,10 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="button_side_padding">30dp</dimen>
+    <dimen name="button_top_padding">20dp</dimen>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
