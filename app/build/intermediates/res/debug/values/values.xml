@@ -24,6 +24,7 @@
     <color name="background_material_light">#ffeeeeee</color>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="black">#000</color>
     <color name="blue">#03A9F4</color>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
@@ -138,6 +139,7 @@
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="button_side_padding">30dp</dimen>
+    <dimen name="button_top_margin">20dp</dimen>
     <dimen name="button_top_padding">20dp</dimen>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>

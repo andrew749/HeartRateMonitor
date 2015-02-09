@@ -56,49 +56,47 @@ MERGED from com.android.support:support-v4:21.0.3:16:5
 		ADDED from AndroidManifest.xml:20:9
 	android:icon
 		ADDED from AndroidManifest.xml:19:9
-	android:theme
-		ADDED from AndroidManifest.xml:21:9
 activity#com.andrew749.heart_rate_monitor.HeartRateMonitor
-ADDED from AndroidManifest.xml:22:9
+ADDED from AndroidManifest.xml:21:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:25:13
-	android:configChanges
 		ADDED from AndroidManifest.xml:24:13
-	android:name
+	android:configChanges
 		ADDED from AndroidManifest.xml:23:13
+	android:name
+		ADDED from AndroidManifest.xml:22:13
 intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:26:13
+ADDED from AndroidManifest.xml:25:13
 action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:26:17
+	android:name
+		ADDED from AndroidManifest.xml:26:25
+category#android.intent.category.DEFAULT
 ADDED from AndroidManifest.xml:27:17
 	android:name
-		ADDED from AndroidManifest.xml:27:25
-category#android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:28:17
-	android:name
-		ADDED from AndroidManifest.xml:28:27
+		ADDED from AndroidManifest.xml:27:27
 activity#com.andrew749.heart_rate_monitor.Done
-ADDED from AndroidManifest.xml:31:9
+ADDED from AndroidManifest.xml:30:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:34:13
-	android:configChanges
 		ADDED from AndroidManifest.xml:33:13
-	android:name
-		ADDED from AndroidManifest.xml:32:13
-activity#com.andrew749.heart_rate_monitor.Home
-ADDED from AndroidManifest.xml:40:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:42:13
 	android:configChanges
+		ADDED from AndroidManifest.xml:32:13
+	android:name
+		ADDED from AndroidManifest.xml:31:13
+activity#com.andrew749.heart_rate_monitor.Home
+ADDED from AndroidManifest.xml:39:9
+	android:screenOrientation
 		ADDED from AndroidManifest.xml:41:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:40:13
 	android:name
-		ADDED from AndroidManifest.xml:40:19
+		ADDED from AndroidManifest.xml:39:19
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:43:13
+ADDED from AndroidManifest.xml:42:13
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:45:17
+ADDED from AndroidManifest.xml:44:17
 	android:name
-		ADDED from AndroidManifest.xml:45:27
+		ADDED from AndroidManifest.xml:44:27
 activity#com.andrew749.tutorialcardlibrary.TutorialsCardActivity
-ADDED from AndroidManifest.xml:48:9
+ADDED from AndroidManifest.xml:47:9
 	android:name
-		ADDED from AndroidManifest.xml:48:19
+		ADDED from AndroidManifest.xml:47:19

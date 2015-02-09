@@ -7,6 +7,5 @@
         android:top="@dimen/button_top_padding"
         android:left="@dimen/button_side_padding"
         android:right="@dimen/button_side_padding"></padding>
-    <stroke android:color="@color/blue"></stroke>
     <solid android:color="@color/white"></solid>
 </shape><!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/drawable/custom_home_button.xml -->

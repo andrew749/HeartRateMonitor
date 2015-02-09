@@ -17,8 +17,7 @@
 
     <application
         android:icon="@drawable/icon"
-        android:label="@string/app_name"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        android:label="@string/app_name">
         <activity
             android:name="com.andrew749.heart_rate_monitor.HeartRateMonitor"
             android:configChanges="keyboardHidden|orientation"
