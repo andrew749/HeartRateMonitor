@@ -33,9 +33,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/maintitle"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/quickMeasurementButton"
-        android:layout_alignStart="@+id/quickMeasurementButton"
         android:textColor="@color/black"
-        android:text="@string/app_name" />
+        android:text="@string/app_name"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/quickMeasurementButton"
+        android:layout_alignEnd="@+id/quickMeasurementButton" />
 </RelativeLayout><!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/layout/home.xml -->
