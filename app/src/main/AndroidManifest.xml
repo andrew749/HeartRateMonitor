@@ -22,7 +22,7 @@
         android:theme="@style/MainStyle"
         >
         <activity
-            android:name="com.andrew749.heart_rate_monitor.HeartRateMonitor"
+            android:name=".Activities.HeartRateMonitor"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.andrew749.heart_rate_monitor.Done"
+            android:name=".Activities.Done"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -39,7 +39,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home"
+        <activity android:name=".Activities.Home"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait">
             <intent-filter>

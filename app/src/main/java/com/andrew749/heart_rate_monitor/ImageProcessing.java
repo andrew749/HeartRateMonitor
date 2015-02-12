@@ -1,10 +1,6 @@
 package com.andrew749.heart_rate_monitor;
 
-/**
- * This abstract class is used to process images.
- *
- */
-public abstract class ImageProcessing {
+public  class ImageProcessing {
 
     private static int decodeYUV420SPtoRedSum(byte[] yuv420sp, int width, int height) {
         if (yuv420sp == null) return 0;

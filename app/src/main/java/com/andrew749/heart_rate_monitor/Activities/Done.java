@@ -1,6 +1,5 @@
-package com.andrew749.heart_rate_monitor;
+package com.andrew749.heart_rate_monitor.Activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -9,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.andrew749.heart_rate_monitor.Activities.HeartRateMonitor;
+import com.andrew749.heart_rate_monitor.R;
 
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
