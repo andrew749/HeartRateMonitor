@@ -60,6 +60,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * <p/>
  * Base code was pulled from Google Code and the original author was
  * Justin Wetherell <phishman3579@gmail.com>
+ * Heavy modification has taken place since fork though.
  */
 public class HeartRateMonitor extends ActionBarActivity {
 
@@ -413,6 +414,9 @@ public class HeartRateMonitor extends ActionBarActivity {
     }
 }
 
+/**
+ * Just a class used to create the tones which play on each heart beat.
+ */
 class toneGenerator {
     private final int duration = 1; // seconds
     private final int sampleRate = 8000;
@@ -421,7 +425,7 @@ class toneGenerator {
     private final double freqOfTone = 440; // hz
 
     private final byte generatedSnd[] = new byte[2 * numSamples];
-
+    //handler used to
     Handler handler = new Handler();
 
 
@@ -439,6 +443,7 @@ class toneGenerator {
         });
         thread.start();
     }
+    //method to generate the tone using simple math with frequency calculation
     void genTone() {
         // fill out the array
         for (int i = 0; i < numSamples; ++i) {
@@ -457,7 +462,7 @@ class toneGenerator {
 
         }
     }
-
+    //Method which will actually play the tone when called.
     void playSound() {
         final AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
                 sampleRate, AudioFormat.CHANNEL_CONFIGURATION_MONO,
