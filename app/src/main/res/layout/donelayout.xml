@@ -14,6 +14,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/restart"
+            android:background="@drawable/custom_home_button_selector"
+            android:textColor="@drawable/textcolorhome"
             android:text="Restart Test"/>
 
     <LinearLayout
