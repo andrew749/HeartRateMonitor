@@ -30,7 +30,7 @@
         android:label="@string/app_name"
         android:theme="@style/MainStyle" >
         <activity
-            android:name="com.andrew749.heart_rate_monitor.HeartRateMonitor"
+            android:name="com.andrew749.heart_rate_monitor.Activities.HeartRateMonitor"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -40,7 +40,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.andrew749.heart_rate_monitor.Done"
+            android:name="com.andrew749.heart_rate_monitor.Activities.Done"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -50,7 +50,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.andrew749.heart_rate_monitor.Home"
+            android:name="com.andrew749.heart_rate_monitor.Activities.Home"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >
             <intent-filter>

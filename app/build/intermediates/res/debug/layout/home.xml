@@ -36,6 +36,5 @@
         android:textColor="@color/black"
         android:text="@string/app_name"
         android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/quickMeasurementButton"
-        android:layout_alignEnd="@+id/quickMeasurementButton" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout><!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/layout/home.xml -->

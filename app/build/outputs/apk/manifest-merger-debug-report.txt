@@ -58,7 +58,7 @@ MERGED from com.android.support:support-v4:21.0.3:16:5
 		ADDED from AndroidManifest.xml:20:9
 	android:theme
 		ADDED from AndroidManifest.xml:22:9
-activity#com.andrew749.heart_rate_monitor.HeartRateMonitor
+activity#com.andrew749.heart_rate_monitor.Activities.HeartRateMonitor
 ADDED from AndroidManifest.xml:24:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:27:13
@@ -76,7 +76,7 @@ category#android.intent.category.DEFAULT
 ADDED from AndroidManifest.xml:30:17
 	android:name
 		ADDED from AndroidManifest.xml:30:27
-activity#com.andrew749.heart_rate_monitor.Done
+activity#com.andrew749.heart_rate_monitor.Activities.Done
 ADDED from AndroidManifest.xml:33:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:36:13
@@ -84,7 +84,7 @@ ADDED from AndroidManifest.xml:33:9
 		ADDED from AndroidManifest.xml:35:13
 	android:name
 		ADDED from AndroidManifest.xml:34:13
-activity#com.andrew749.heart_rate_monitor.Home
+activity#com.andrew749.heart_rate_monitor.Activities.Home
 ADDED from AndroidManifest.xml:42:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:44:13
