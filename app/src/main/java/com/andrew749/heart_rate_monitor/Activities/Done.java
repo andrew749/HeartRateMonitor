@@ -55,6 +55,7 @@ public class Done extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.donelayout);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         int i = 0;
         restart = (Button) findViewById(R.id.restart);
         restart.setOnClickListener(new View.OnClickListener() {

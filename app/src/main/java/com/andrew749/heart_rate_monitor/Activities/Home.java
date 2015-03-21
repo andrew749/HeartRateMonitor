@@ -30,13 +30,15 @@ public class Home extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        Intent intent;
         switch (v.getId()){
             case R.id.quickMeasurementButton:
-                Intent intent=new Intent(this,HeartRateMonitor.class);
+                 intent=new Intent(this,HeartRateMonitor.class);
                 startActivity(intent);
                 break;
             case R.id.historyButton:
-                Intent intent=new Intent(this, )
+                 intent=new Intent(this, History.class);
+                startActivity(intent);
                 break;
 
         }

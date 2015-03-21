@@ -82,9 +82,7 @@ public class HeartRateMonitor extends ActionBarActivity {
 
     public static enum TYPE {
         GREEN, RED
-    }
-
-    ;
+    };
 
     private static TYPE currentType = TYPE.GREEN;
 
@@ -138,6 +136,7 @@ public class HeartRateMonitor extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         c = this;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         dataset.addSeries(series);
         graphicalView = ChartFactory.getScatterChartView(this, dataset, getDemoRenderer());
         LinearLayout layout = (LinearLayout) findViewById(R.id.graphlayout);

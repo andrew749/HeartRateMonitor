@@ -6,6 +6,6 @@
         android:left="@dimen/button_side_padding"
         android:right="@dimen/button_side_padding"
         android:top="@dimen/button_top_padding"></padding>
-    <solid android:color="@color/blue"></solid>
+    <solid android:color="@color/red"></solid>
     <corners android:radius="10dp"></corners>
 </shape>
