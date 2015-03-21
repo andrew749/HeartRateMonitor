@@ -344,10 +344,11 @@ int drawable custom_home_button 0x7f020033
 int drawable custom_home_button_selected 0x7f020034
 int drawable custom_home_button_selector 0x7f020035
 int drawable green_icon 0x7f020036
-int drawable ic_launcher 0x7f020037
-int drawable icon 0x7f020038
-int drawable red_icon 0x7f020039
-int drawable textcolorhome 0x7f02003a
+int drawable heartratemonitorlogo 0x7f020037
+int drawable ic_launcher 0x7f020038
+int drawable icon 0x7f020039
+int drawable red_icon 0x7f02003a
+int drawable textcolorhome 0x7f02003b
 int id action_bar 0x7f080031
 int id action_bar_activity_content 0x7f080000
 int id action_bar_container 0x7f080030

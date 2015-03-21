@@ -1310,10 +1310,11 @@ containing a value of this type.
         public static final int custom_home_button_selected=0x7f020034;
         public static final int custom_home_button_selector=0x7f020035;
         public static final int green_icon=0x7f020036;
-        public static final int ic_launcher=0x7f020037;
-        public static final int icon=0x7f020038;
-        public static final int red_icon=0x7f020039;
-        public static final int textcolorhome=0x7f02003a;
+        public static final int heartratemonitorlogo=0x7f020037;
+        public static final int ic_launcher=0x7f020038;
+        public static final int icon=0x7f020039;
+        public static final int red_icon=0x7f02003a;
+        public static final int textcolorhome=0x7f02003b;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;
