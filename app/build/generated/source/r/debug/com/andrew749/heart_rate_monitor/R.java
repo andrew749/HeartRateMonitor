@@ -1452,11 +1452,15 @@ containing a value of this type.
         public static final int app_name=0x7f0a0011;
         public static final int default_text=0x7f0a0012;
         public static final int finish=0x7f0a0013;
-        public static final int hello_world=0x7f0a0014;
-        public static final int mainbutton_history=0x7f0a0015;
-        public static final int mainbutton_quick=0x7f0a0016;
-        public static final int nextbutton=0x7f0a0017;
-        public static final int previousbutton=0x7f0a0018;
+        public static final int first_time_dialog_message=0x7f0a0014;
+        public static final int first_time_dialog_title=0x7f0a0015;
+        public static final int hello_world=0x7f0a0016;
+        public static final int mainbutton_history=0x7f0a0017;
+        public static final int mainbutton_quick=0x7f0a0018;
+        public static final int nextbutton=0x7f0a0019;
+        public static final int nobutton=0x7f0a001a;
+        public static final int previousbutton=0x7f0a001b;
+        public static final int yesbutton=0x7f0a001c;
     }
     public static final class style {
         public static final int Base_TextAppearance_AppCompat=0x7f0b0000;

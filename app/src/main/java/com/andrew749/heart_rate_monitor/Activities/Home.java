@@ -1,6 +1,8 @@
 package com.andrew749.heart_rate_monitor.Activities;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -36,10 +38,26 @@ public class Home extends Activity implements View.OnClickListener {
 
         if (settings.getBoolean("my_first_time", true)) {
             //the app is being launched for first time, do something
-            Log.d("Comments", "First time");
+            AlertDialog.Builder dialogBuilder= new AlertDialog.Builder(this);
+            dialogBuilder.setTitle(getString(R.string.first_time_dialog_title));
+            dialogBuilder.setMessage(getString(R.string.first_time_dialog_message));
+            dialogBuilder.setCancelable(false);
+            dialogBuilder.setPositiveButton(getString(R.string.yesbutton), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    //run video tutorial
+                    runTutorial();
+                }
+            });
+            dialogBuilder.setNegativeButton(getString(R.string.nobutton),new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
 
-            // first time task
-            runTutorial();
+                }
+            });
+            AlertDialog dialog=dialogBuilder.create();
+            dialog.show();
+                        // first time task
             // record the fact that the app has been started at least once
             settings.edit().putBoolean("my_first_time", false).commit();
         }

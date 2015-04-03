@@ -474,9 +474,9 @@ public final class R {
 		public static final int action_settings = 0x7f0a0010;
 		public static final int app_name = 0x7f0a0011;
 		public static final int finish = 0x7f0a0013;
-		public static final int hello_world = 0x7f0a0014;
-		public static final int nextbutton = 0x7f0a0017;
-		public static final int previousbutton = 0x7f0a0018;
+		public static final int hello_world = 0x7f0a0016;
+		public static final int nextbutton = 0x7f0a0019;
+		public static final int previousbutton = 0x7f0a001b;
 	}
 	public static final class style {
 		public static final int Base_TextAppearance_AppCompat = 0x7f0b0000;

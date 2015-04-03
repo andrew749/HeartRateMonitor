@@ -4,4 +4,9 @@
     <string name="app_name">HeartRateMonitor</string>
     <string name="mainbutton_quick">Quick Measurement</string>
     <string name="mainbutton_history">History</string>
+    <string name="first_time_dialog_title">First Time</string>
+    <string name="first_time_dialog_message">Would you like to see how to take your first measurment?</string>
+    <string name="yesbutton">Yes</string>
+    <string name="nobutton">No</string>
+
 </resources>

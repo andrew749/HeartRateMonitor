@@ -190,6 +190,12 @@
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="finish">Finish</string>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="first_time_dialog_message">Would you like to see how to take your first measurment?</string>
+    <string name="first_time_dialog_title">First Time</string>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
     <eat-comment/>
@@ -198,7 +204,15 @@
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="nextbutton">Next</string>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="nobutton">No</string>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <string name="previousbutton">Previous</string>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="yesbutton">Yes</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
