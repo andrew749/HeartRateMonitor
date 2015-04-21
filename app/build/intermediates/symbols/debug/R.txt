@@ -372,6 +372,7 @@ int id default_activity_button 0x7f080024
 int id descriptionText 0x7f08004e
 int id dialog 0x7f08001b
 int id disableHome 0x7f08000c
+int id done_graphview 0x7f08003f
 int id dropdown 0x7f08001c
 int id edit_query 0x7f080033
 int id end 0x7f080014
@@ -388,7 +389,6 @@ int id imageSwitcher 0x7f08004d
 int id layout 0x7f080045
 int id listMode 0x7f080009
 int id list_item 0x7f080025
-int id lll 0x7f08003f
 int id maintitle 0x7f080043
 int id middle 0x7f080015
 int id never 0x7f080019

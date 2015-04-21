@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.andrew749.heart_rate_monitor.Activities.HeartRateMonitor;
 import com.andrew749.heart_rate_monitor.R;
 
 import org.achartengine.ChartFactory;
@@ -40,9 +39,10 @@ public class Done extends ActionBarActivity {
         renderer.setLabelsTextSize(HeartRateMonitor.CHART_LABELS_TEXT_SIZE);
         renderer.setLegendTextSize(HeartRateMonitor.CHART_LEGEND_TEXT_SIZE);
         renderer.setPointSize(HeartRateMonitor.CHART_POINT_SIZE);
+        renderer.setMarginsColor(Color.WHITE);
         renderer.setMargins(new int[]{20, 30, 15, 0});
         XYSeriesRenderer r = new XYSeriesRenderer();
-        r.setColor(Color.BLUE);
+        r.setColor(Color.RED);
         r.setPointStyle(PointStyle.SQUARE);
         r.setFillBelowLine(true);
         r.setFillBelowLineColor(Color.WHITE);
@@ -76,7 +76,7 @@ public class Done extends ActionBarActivity {
         tv.append("Average: "+ total/i );
         dataset.addSeries(series);
         graphicalView = ChartFactory.getScatterChartView(this, dataset, getDemoRenderer());
-        LinearLayout layout = (LinearLayout) findViewById(R.id.lll);
+        LinearLayout layout = (LinearLayout) findViewById(R.id.done_graphview);
         layout.addView(graphicalView);
     }
 

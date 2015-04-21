@@ -1340,6 +1340,7 @@ containing a value of this type.
         public static final int descriptionText=0x7f08004e;
         public static final int dialog=0x7f08001b;
         public static final int disableHome=0x7f08000c;
+        public static final int done_graphview=0x7f08003f;
         public static final int dropdown=0x7f08001c;
         public static final int edit_query=0x7f080033;
         public static final int end=0x7f080014;
@@ -1356,7 +1357,6 @@ containing a value of this type.
         public static final int layout=0x7f080045;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
-        public static final int lll=0x7f08003f;
         public static final int maintitle=0x7f080043;
         public static final int middle=0x7f080015;
         public static final int never=0x7f080019;
