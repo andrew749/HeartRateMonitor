@@ -1253,6 +1253,7 @@ containing a value of this type.
         public static final int dialog_fixed_width_minor=0x7f07002d;
         public static final int disabled_alpha_material_dark=0x7f07002e;
         public static final int disabled_alpha_material_light=0x7f07002f;
+        public static final int home_button_sidemargin=0x7f070030;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -1314,7 +1315,8 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020038;
         public static final int icon=0x7f020039;
         public static final int red_icon=0x7f02003a;
-        public static final int textcolorhome=0x7f02003b;
+        public static final int stroke=0x7f02003b;
+        public static final int textcolorhome=0x7f02003c;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;
@@ -1337,7 +1339,7 @@ containing a value of this type.
         public static final int collapseActionView=0x7f080017;
         public static final int decor_content_parent=0x7f08002f;
         public static final int default_activity_button=0x7f080024;
-        public static final int descriptionText=0x7f08004e;
+        public static final int descriptionText=0x7f08004f;
         public static final int dialog=0x7f08001b;
         public static final int disableHome=0x7f08000c;
         public static final int done_graphview=0x7f08003f;
@@ -1346,25 +1348,26 @@ containing a value of this type.
         public static final int end=0x7f080014;
         public static final int expand_activities_button=0x7f080022;
         public static final int expanded_menu=0x7f080028;
-        public static final int graphlayout=0x7f08004a;
+        public static final int graphlayout=0x7f08004b;
         public static final int historyButton=0x7f080044;
         public static final int home=0x7f080004;
         public static final int homeAsUp=0x7f08000d;
         public static final int icon=0x7f080026;
         public static final int ifRoom=0x7f080018;
         public static final int image=0x7f080023;
-        public static final int imageSwitcher=0x7f08004d;
-        public static final int layout=0x7f080045;
+        public static final int imageSwitcher=0x7f08004e;
+        public static final int imageView=0x7f080045;
+        public static final int layout=0x7f080046;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
         public static final int maintitle=0x7f080043;
         public static final int middle=0x7f080015;
         public static final int never=0x7f080019;
-        public static final int nextButton=0x7f08004b;
+        public static final int nextButton=0x7f08004c;
         public static final int none=0x7f08000e;
         public static final int normal=0x7f08000a;
-        public static final int preview=0x7f080048;
-        public static final int previousButton=0x7f08004c;
+        public static final int preview=0x7f080049;
+        public static final int previousButton=0x7f08004d;
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int quickMeasurementButton=0x7f080042;
@@ -1385,12 +1388,12 @@ containing a value of this type.
         public static final int showHome=0x7f080010;
         public static final int showTitle=0x7f080011;
         public static final int split_action_bar=0x7f080007;
-        public static final int stop=0x7f080049;
+        public static final int stop=0x7f08004a;
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
-        public static final int text=0x7f080047;
+        public static final int text=0x7f080048;
         public static final int title=0x7f080027;
-        public static final int top=0x7f080046;
+        public static final int top=0x7f080047;
         public static final int tv=0x7f080040;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
@@ -1455,12 +1458,13 @@ containing a value of this type.
         public static final int first_time_dialog_message=0x7f0a0014;
         public static final int first_time_dialog_title=0x7f0a0015;
         public static final int hello_world=0x7f0a0016;
-        public static final int mainbutton_history=0x7f0a0017;
-        public static final int mainbutton_quick=0x7f0a0018;
-        public static final int nextbutton=0x7f0a0019;
-        public static final int nobutton=0x7f0a001a;
-        public static final int previousbutton=0x7f0a001b;
-        public static final int yesbutton=0x7f0a001c;
+        public static final int home_title=0x7f0a0017;
+        public static final int mainbutton_history=0x7f0a0018;
+        public static final int mainbutton_quick=0x7f0a0019;
+        public static final int nextbutton=0x7f0a001a;
+        public static final int nobutton=0x7f0a001b;
+        public static final int previousbutton=0x7f0a001c;
+        public static final int yesbutton=0x7f0a001d;
     }
     public static final class style {
         public static final int Base_TextAppearance_AppCompat=0x7f0b0000;

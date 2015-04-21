@@ -3,4 +3,5 @@
     <dimen name="button_side_padding">30dp</dimen>
     <dimen name="button_top_padding">20dp</dimen>
     <dimen name="button_top_margin">20dp</dimen>
+    <dimen name="home_button_sidemargin">50dip</dimen>
 </resources>

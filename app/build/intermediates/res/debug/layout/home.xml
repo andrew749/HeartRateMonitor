@@ -5,7 +5,7 @@
     android:background="@color/white">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/quickMeasurementButton"
         android:layout_gravity="center_horizontal"
@@ -14,10 +14,12 @@
         android:textColor="@drawable/textcolorhome"
         android:layout_below="@+id/maintitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/button_top_margin"/>
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:layout_marginLeft="@dimen/home_button_sidemargin"
+        android:layout_marginRight="@dimen/home_button_sidemargin"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/button_top_margin"
         android:text="@string/mainbutton_history"
@@ -26,7 +28,11 @@
         android:background="@drawable/custom_home_button_selector"
         android:textColor="@drawable/textcolorhome"
         android:layout_below="@+id/quickMeasurementButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/home_button_sidemargin"
+        android:layout_marginRight="@dimen/home_button_sidemargin"
+
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +40,18 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/maintitle"
         android:textColor="@color/black"
-        android:text="@string/app_name"
+        android:text="@string/home_title"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/stroke"
+        android:cropToPadding="false"
+        android:layout_above="@+id/maintitle"
+        android:layout_centerHorizontal="true"
+        android:padding="30dip" />
 </RelativeLayout><!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/layout/home.xml -->

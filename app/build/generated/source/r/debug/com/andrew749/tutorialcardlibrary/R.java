@@ -376,7 +376,7 @@ public final class R {
 		public static final int collapseActionView = 0x7f080017;
 		public static final int decor_content_parent = 0x7f08002f;
 		public static final int default_activity_button = 0x7f080024;
-		public static final int descriptionText = 0x7f08004e;
+		public static final int descriptionText = 0x7f08004f;
 		public static final int dialog = 0x7f08001b;
 		public static final int disableHome = 0x7f08000c;
 		public static final int dropdown = 0x7f08001c;
@@ -389,15 +389,15 @@ public final class R {
 		public static final int icon = 0x7f080026;
 		public static final int ifRoom = 0x7f080018;
 		public static final int image = 0x7f080023;
-		public static final int imageSwitcher = 0x7f08004d;
+		public static final int imageSwitcher = 0x7f08004e;
 		public static final int listMode = 0x7f080009;
 		public static final int list_item = 0x7f080025;
 		public static final int middle = 0x7f080015;
 		public static final int never = 0x7f080019;
-		public static final int nextButton = 0x7f08004b;
+		public static final int nextButton = 0x7f08004c;
 		public static final int none = 0x7f08000e;
 		public static final int normal = 0x7f08000a;
-		public static final int previousButton = 0x7f08004c;
+		public static final int previousButton = 0x7f08004d;
 		public static final int progress_circular = 0x7f080005;
 		public static final int progress_horizontal = 0x7f080006;
 		public static final int radio = 0x7f08002b;
@@ -475,8 +475,8 @@ public final class R {
 		public static final int app_name = 0x7f0a0011;
 		public static final int finish = 0x7f0a0013;
 		public static final int hello_world = 0x7f0a0016;
-		public static final int nextbutton = 0x7f0a0019;
-		public static final int previousbutton = 0x7f0a001b;
+		public static final int nextbutton = 0x7f0a001a;
+		public static final int previousbutton = 0x7f0a001c;
 	}
 	public static final class style {
 		public static final int Base_TextAppearance_AppCompat = 0x7f0b0000;
