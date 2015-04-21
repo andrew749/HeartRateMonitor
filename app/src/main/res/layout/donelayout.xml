@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
     android:background="#FFF"
-    android:layout_weight="1">
+    android:orientation="vertical">
+
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/done_graphview"
-        android:orientation="horizontal"
-        android:layout_weight="0.7"></LinearLayout>
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.6"
+        android:orientation="horizontal"></LinearLayout>
+
     <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv"/>
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="Average: 0"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        />
 
     <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/restart"
-            android:background="@drawable/custom_home_button_selector"
-            android:textColor="@drawable/textcolorhome"
-            android:text="Restart Test"/>
-
-
+        android:id="@+id/restart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_home_button_selector"
+        android:text="Restart Test"
+        android:textColor="@drawable/textcolorhome" />
 
 
 </LinearLayout>

@@ -40,7 +40,7 @@ public class DoneActivity extends ActionBarActivity {
         renderer.setLegendTextSize(HeartRateMonitor.CHART_LEGEND_TEXT_SIZE);
         renderer.setPointSize(HeartRateMonitor.CHART_POINT_SIZE);
         renderer.setMarginsColor(Color.WHITE);
-        renderer.setMargins(new int[]{20, 30, 15, 0});
+        renderer.setMargins(new int[]{20, 20, 15, 0});
         XYSeriesRenderer r = new XYSeriesRenderer();
         r.setColor(Color.RED);
         r.setPointStyle(PointStyle.SQUARE);
@@ -68,12 +68,11 @@ public class DoneActivity extends ActionBarActivity {
         Bundle b = getIntent().getExtras().getBundle("rates");
         double[] rates = b.getDoubleArray("ratesbundle");
         for (double r : rates) {
-            tv.append(r + "\n");
             series.add(i, r);
             i++;
             total+=r;
         }
-        tv.append("Average: "+ total/i );
+        tv.setText("Average: "+ total/i );
         dataset.addSeries(series);
         graphicalView = ChartFactory.getScatterChartView(this, dataset, getDemoRenderer());
         LinearLayout layout = (LinearLayout) findViewById(R.id.done_graphview);
