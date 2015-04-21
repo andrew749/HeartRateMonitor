@@ -1,57 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/quickMeasurementButton"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/mainbutton_quick"
-        android:background="@drawable/custom_home_button_selector"
-        android:textColor="@drawable/textcolorhome"
-        android:layout_below="@+id/maintitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/button_top_margin"
-        android:layout_marginLeft="@dimen/home_button_sidemargin"
-        android:layout_marginRight="@dimen/home_button_sidemargin"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/button_top_margin"
-        android:text="@string/mainbutton_history"
-        android:id="@+id/historyButton"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/custom_home_button_selector"
-        android:textColor="@drawable/textcolorhome"
-        android:layout_below="@+id/quickMeasurementButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/home_button_sidemargin"
-        android:layout_marginRight="@dimen/home_button_sidemargin"
-
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/maintitle"
-        android:textColor="@color/black"
-        android:text="@string/home_title"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:typeface="monospace" />
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/home_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/stroke"
-        android:cropToPadding="false"
-        android:layout_above="@+id/maintitle"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:padding="30dip" />
+        android:layout_marginBottom="@dimen/button_top_margin"
+        android:cropToPadding="false"
+        android:padding="30dip"
+        android:src="@drawable/stroke" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_image"
+        android:background="@color/red"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/maintitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/button_top_margin"
+            android:layout_marginTop="@dimen/button_top_margin"
+            android:text="@string/home_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:typeface="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/maintitle"
+         >
+
+            <Button
+                android:id="@+id/quickMeasurementButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="@dimen/home_button_sidemargin"
+                android:layout_marginRight="@dimen/home_button_sidemargin"
+                android:layout_marginTop="@dimen/button_top_margin"
+                android:background="@drawable/custom_home_button_selector"
+                android:text="@string/mainbutton_quick"
+                android:textColor="@drawable/textcolorhome" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout><!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/layout/home.xml -->

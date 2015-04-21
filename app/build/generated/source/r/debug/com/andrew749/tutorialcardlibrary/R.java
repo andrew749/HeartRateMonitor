@@ -376,7 +376,7 @@ public final class R {
 		public static final int collapseActionView = 0x7f080017;
 		public static final int decor_content_parent = 0x7f08002f;
 		public static final int default_activity_button = 0x7f080024;
-		public static final int descriptionText = 0x7f08004f;
+		public static final int descriptionText = 0x7f08004e;
 		public static final int dialog = 0x7f08001b;
 		public static final int disableHome = 0x7f08000c;
 		public static final int dropdown = 0x7f08001c;
@@ -389,15 +389,15 @@ public final class R {
 		public static final int icon = 0x7f080026;
 		public static final int ifRoom = 0x7f080018;
 		public static final int image = 0x7f080023;
-		public static final int imageSwitcher = 0x7f08004e;
+		public static final int imageSwitcher = 0x7f08004d;
 		public static final int listMode = 0x7f080009;
 		public static final int list_item = 0x7f080025;
 		public static final int middle = 0x7f080015;
 		public static final int never = 0x7f080019;
-		public static final int nextButton = 0x7f08004c;
+		public static final int nextButton = 0x7f08004b;
 		public static final int none = 0x7f08000e;
 		public static final int normal = 0x7f08000a;
-		public static final int previousButton = 0x7f08004d;
+		public static final int previousButton = 0x7f08004c;
 		public static final int progress_circular = 0x7f080005;
 		public static final int progress_horizontal = 0x7f080006;
 		public static final int radio = 0x7f08002b;
@@ -451,8 +451,8 @@ public final class R {
 		public static final int abc_search_dropdown_item_icons_2line = 0x7f030014;
 		public static final int abc_search_view = 0x7f030015;
 		public static final int abc_simple_dropdown_hint = 0x7f030016;
-		public static final int support_simple_spinner_dropdown_item = 0x7f03001b;
-		public static final int tutorials_card = 0x7f03001c;
+		public static final int support_simple_spinner_dropdown_item = 0x7f03001a;
+		public static final int tutorials_card = 0x7f03001b;
 	}
 	public static final class string {
 		public static final int abc_action_bar_home_description = 0x7f0a0000;

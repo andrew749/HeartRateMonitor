@@ -73,10 +73,7 @@ public class Home extends Activity implements View.OnClickListener {
                  intent=new Intent(this,HeartRateMonitor.class);
                 startActivity(intent);
                 break;
-            case R.id.historyButton:
-                 intent=new Intent(this, History.class);
-                startActivity(intent);
-                break;
+
 
         }
     }
