@@ -19,6 +19,8 @@ import org.achartengine.model.XYSeries;
 import org.achartengine.renderer.XYMultipleSeriesRenderer;
 import org.achartengine.renderer.XYSeriesRenderer;
 
+import java.text.DecimalFormat;
+
 
 /**
  * Created by andrew on 12/12/13.
@@ -66,13 +68,14 @@ public class DoneActivity extends ActionBarActivity {
         });
         TextView tv = (TextView) findViewById(R.id.tv);
         Bundle b = getIntent().getExtras().getBundle("rates");
+
         double[] rates = b.getDoubleArray("ratesbundle");
         for (double r : rates) {
             series.add(i, r);
             i++;
             total+=r;
         }
-        tv.setText("Average: "+ total/i );
+        tv.setText("Average: " + (int)(total / i));
         dataset.addSeries(series);
         graphicalView = ChartFactory.getScatterChartView(this, dataset, getDemoRenderer());
         LinearLayout layout = (LinearLayout) findViewById(R.id.done_graphview);
