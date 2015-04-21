@@ -26,9 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="a21d4b20-4e24-4ab6-a547-e941829cf452" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/Activities/Done.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/Activities/Done.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/andrew749/heart_rate_monitor/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/andrew749/heart_rate_monitor/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/donelayout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/donelayout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Heart Rate Monitor.iws" />
@@ -104,12 +102,12 @@
       </file>
       <file leaf-file-name="home.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home.xml">
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5683453" vertical-offset="119" max-vertical-offset="675">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1388,7 +1386,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/MeasurementRecord.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/ImageProcessing.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/FileOperations.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/home.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/HeartbeatView.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/History.java" />
@@ -1405,6 +1402,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/Activities/Home.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/donelayout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/andrew749/heart_rate_monitor/Activities/Done.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/home.xml" />
       </list>
     </option>
   </component>
@@ -2358,12 +2356,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home.xml">
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5683453" vertical-offset="119" max-vertical-offset="675">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -36,5 +36,16 @@
         android:textColor="@color/black"
         android:text="@string/app_name"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/stroke"
+        android:cropToPadding="false"
+        android:layout_above="@+id/maintitle"
+        android:layout_centerHorizontal="true"
+        android:padding="30dip" />
 </RelativeLayout>
