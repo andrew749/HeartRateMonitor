@@ -41,7 +41,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.andrew749.heart_rate_monitor.Activities.Done"
+            android:name="com.andrew749.heart_rate_monitor.Activities.DoneActivity"
             android:configChanges="keyboardHidden|orientation"
             android:parentActivityName="com.andrew749.heart_rate_monitor.Activities.Home"
             android:screenOrientation="portrait" >

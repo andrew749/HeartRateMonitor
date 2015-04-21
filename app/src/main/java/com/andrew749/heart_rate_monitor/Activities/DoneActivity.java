@@ -24,7 +24,7 @@ import org.achartengine.renderer.XYSeriesRenderer;
  * Created by andrew on 12/12/13.
  */
 
-public class Done extends ActionBarActivity {
+public class DoneActivity extends ActionBarActivity {
     XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
     public GraphicalView graphicalView;
     static XYSeries series = new XYSeries("heart rate");

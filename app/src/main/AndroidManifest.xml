@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.Done"
+            android:name=".Activities.DoneActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:parentActivityName=".Activities.Home">

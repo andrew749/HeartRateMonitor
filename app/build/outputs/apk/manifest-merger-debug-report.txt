@@ -78,7 +78,7 @@ category#android.intent.category.DEFAULT
 ADDED from AndroidManifest.xml:31:17
 	android:name
 		ADDED from AndroidManifest.xml:31:27
-activity#com.andrew749.heart_rate_monitor.Activities.Done
+activity#com.andrew749.heart_rate_monitor.Activities.DoneActivity
 ADDED from AndroidManifest.xml:34:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:37:13

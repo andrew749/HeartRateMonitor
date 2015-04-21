@@ -120,6 +120,7 @@ public class HeartRateMonitor extends ActionBarActivity {
         renderer.setLabelsTextSize(HeartRateMonitor.CHART_LABELS_TEXT_SIZE);
         renderer.setLegendTextSize(HeartRateMonitor.CHART_LEGEND_TEXT_SIZE);
         renderer.setPointSize(HeartRateMonitor.CHART_POINT_SIZE);
+        renderer.setMarginsColor(Color.WHITE);
         renderer.setMargins(new int[]{20, 30, 15, 0});
         XYSeriesRenderer r = new XYSeriesRenderer();
         r.setColor(Color.BLUE);
@@ -244,7 +245,7 @@ public class HeartRateMonitor extends ActionBarActivity {
     public static void launchDoneActivity(Context c) {
         Intent i = new Intent();
 
-        i.setClass(c, Done.class);
+        i.setClass(c, DoneActivity.class);
         Bundle bundle = new Bundle();
         bundle.putDoubleArray("ratesbundle", getRates());
         i.putExtra("rates", bundle);
