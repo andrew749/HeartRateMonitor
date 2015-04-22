@@ -206,7 +206,7 @@
     <eat-comment/>
     <string name="home_title">Heart Rate Monitor</string>
     <string name="mainbutton_history">History</string>
-    <string name="mainbutton_quick">Quick Measurement</string>
+    <string name="mainbutton_quick">Take Measurement</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="nextbutton">Next</string>

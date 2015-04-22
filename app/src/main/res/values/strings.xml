@@ -2,13 +2,15 @@
 <resources>
     <string name="default_text">--</string>
     <string name="app_name">HeartRateMonitor</string>
-    <string name="mainbutton_quick">Quick Measurement</string>
+    <string name="mainbutton_quick">Take Measurement</string>
     <string name="mainbutton_history">History</string>
-    <string name="first_time_dialog_title">First Time</string>
+    <string name="first_time_dialog_title">First Time?</string>
     <string name="first_time_dialog_message">Would you like to see how to take your first measurment?</string>
     <string name="yesbutton">Yes</string>
     <string name="nobutton">No</string>
     <string name="home_title">Heart Rate Monitor</string>
+    <string name="tutorial_1">Locate the LED flash and camera on your device.</string>
+    <string name="tutorial_2">Place your index finger over the camera, making sure to cover the flash as well.</string>
 
 
 </resources>

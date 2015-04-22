@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/home/andrew/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-c3e3ed59647c97c80d1eedb3c76dac4f9fa1d196.jar" />
-    </item>
-    <item
         jar="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -30,6 +23,13 @@
         <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-144dbeee997913f2e3904b540ccf9172fdc72a40.jar" />
     </item>
     <item
+        jar="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f804f5b44f1e9812d5168e61d2c1abb2c8e9e6e5">
+        <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-d64e2a5865f0024299fe83dc0370563bb5ba94c1.jar" />
+    </item>
+    <item
         jar="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -37,11 +37,11 @@
         <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-0bb51cf593fdf38da027f9b74c8262bb5d87feb4.jar" />
     </item>
     <item
-        jar="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/classes.jar"
+        jar="/home/andrew/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="f804f5b44f1e9812d5168e61d2c1abb2c8e9e6e5">
-        <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-d64e2a5865f0024299fe83dc0370563bb5ba94c1.jar" />
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-c3e3ed59647c97c80d1eedb3c76dac4f9fa1d196.jar" />
     </item>
 
 </items>
