@@ -294,12 +294,13 @@ public final class R {
 		public static final int abc_text_size_title_material_toolbar = 0x7f070024;
 		public static final int activity_horizontal_margin = 0x7f070025;
 		public static final int activity_vertical_margin = 0x7f070026;
-		public static final int dialog_fixed_height_major = 0x7f07002a;
-		public static final int dialog_fixed_height_minor = 0x7f07002b;
-		public static final int dialog_fixed_width_major = 0x7f07002c;
-		public static final int dialog_fixed_width_minor = 0x7f07002d;
-		public static final int disabled_alpha_material_dark = 0x7f07002e;
-		public static final int disabled_alpha_material_light = 0x7f07002f;
+		public static final int bottom_button_margin = 0x7f070027;
+		public static final int dialog_fixed_height_major = 0x7f07002b;
+		public static final int dialog_fixed_height_minor = 0x7f07002c;
+		public static final int dialog_fixed_width_major = 0x7f07002d;
+		public static final int dialog_fixed_width_minor = 0x7f07002e;
+		public static final int disabled_alpha_material_dark = 0x7f07002f;
+		public static final int disabled_alpha_material_light = 0x7f070030;
 	}
 	public static final class drawable {
 		public static final int abc_ab_share_pack_holo_dark = 0x7f020000;
@@ -353,7 +354,7 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f020030;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f020031;
 		public static final int abc_textfield_search_material = 0x7f020032;
-		public static final int ic_launcher = 0x7f020038;
+		public static final int ic_launcher = 0x7f020039;
 	}
 	public static final class id {
 		public static final int action_bar = 0x7f080031;
@@ -389,15 +390,15 @@ public final class R {
 		public static final int icon = 0x7f080026;
 		public static final int ifRoom = 0x7f080018;
 		public static final int image = 0x7f080023;
-		public static final int imageSwitcher = 0x7f08004d;
+		public static final int imageSwitcher = 0x7f08004b;
 		public static final int listMode = 0x7f080009;
 		public static final int list_item = 0x7f080025;
 		public static final int middle = 0x7f080015;
 		public static final int never = 0x7f080019;
-		public static final int nextButton = 0x7f08004b;
+		public static final int nextButton = 0x7f08004c;
 		public static final int none = 0x7f08000e;
 		public static final int normal = 0x7f08000a;
-		public static final int previousButton = 0x7f08004c;
+		public static final int previousButton = 0x7f08004d;
 		public static final int progress_circular = 0x7f080005;
 		public static final int progress_horizontal = 0x7f080006;
 		public static final int radio = 0x7f08002b;

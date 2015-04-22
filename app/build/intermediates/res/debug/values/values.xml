@@ -137,10 +137,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bottom_button_margin">20dip</dimen>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="button_side_padding">30dp</dimen>
@@ -185,21 +186,21 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">HeartRateMonitor</string>
     <string name="default_text">--</string>
-    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="finish">Finish</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="first_time_dialog_message">Would you like to see how to take your first measurment?</string>
-    <string name="first_time_dialog_title">First Time</string>
-    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <string name="first_time_dialog_title">First Time?</string>
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
@@ -207,17 +208,19 @@
     <string name="home_title">Heart Rate Monitor</string>
     <string name="mainbutton_history">History</string>
     <string name="mainbutton_quick">Take Measurement</string>
-    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="nextbutton">Next</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="nobutton">No</string>
-    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="previousbutton">Previous</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="tutorial_1">Locate the LED flash and camera on your device.</string>
+    <string name="tutorial_2">Place your index finger over the camera and flash.</string>
     <string name="yesbutton">Yes</string>
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
@@ -973,7 +976,7 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="CustomTutorialTheme" parent="Base.Theme.AppCompat">
         <item name="android:background">#FFF</item>
@@ -1275,7 +1278,7 @@
     <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="actionbarstyle" parent="Widget.AppCompat.ActionBar.Solid"> <item name="background">@color/red</item></style>
-    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="custombuttontheme" parent="Base.TextAppearance.AppCompat.Button">
         <item name="android:textColor">#33B5E5</item>

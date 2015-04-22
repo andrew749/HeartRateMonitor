@@ -37,6 +37,7 @@ public class TutorialsCardActivity extends Activity implements View.OnClickListe
         next = (Button) findViewById(R.id.nextButton);
         descriptionText = (TextView) findViewById(R.id.descriptionText);
         previous = (Button) findViewById(R.id.previousButton);
+        previous.setVisibility(View.INVISIBLE);
         next.setOnClickListener(this);
         previous.setOnClickListener(this);
         switcher.setFactory(new ViewSwitcher.ViewFactory() {
@@ -58,12 +59,14 @@ public class TutorialsCardActivity extends Activity implements View.OnClickListe
                 return gestureDetector.onTouchEvent(event);
             }
         };
+        descriptionText.setText(entries.get(index).description);
 
         // Do this for each view added to the grid
         switcher.setOnTouchListener(gestureListener);
     }
 
     public void nextImage() {
+        previous.setVisibility(View.VISIBLE);
         Animation in = AnimationUtils.makeInAnimation(getApplicationContext(), false);
         Animation out = AnimationUtils.makeOutAnimation(getApplicationContext(), false);
         switcher.setInAnimation(in);
@@ -82,6 +85,8 @@ public class TutorialsCardActivity extends Activity implements View.OnClickListe
     }
 
     public void previousImage() {
+        if(index==0)
+            previous.setVisibility(View.INVISIBLE);
         Animation in = AnimationUtils.makeInAnimation(getApplicationContext(), true);
         Animation out = AnimationUtils.makeOutAnimation(getApplicationContext(), true);
         switcher.setInAnimation(in);

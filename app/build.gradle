@@ -19,5 +19,5 @@ android {
 
 dependencies {
     compile files('/home/andrew/Projects/HeartRateMonitor/lib/achartengine-1.1.0.jar')
-    compile project(':cardlibrary')
+    compile project(':tutorialcardlibrary')
 }

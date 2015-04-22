@@ -41,16 +41,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activities.History"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Activities.Home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+
         <activity android:name=".Activities.Home"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait">

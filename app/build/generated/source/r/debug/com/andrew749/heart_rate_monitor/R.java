@@ -1244,16 +1244,17 @@ containing a value of this type.
         public static final int abc_text_size_title_material_toolbar=0x7f070024;
         public static final int activity_horizontal_margin=0x7f070025;
         public static final int activity_vertical_margin=0x7f070026;
-        public static final int button_side_padding=0x7f070027;
-        public static final int button_top_margin=0x7f070028;
-        public static final int button_top_padding=0x7f070029;
-        public static final int dialog_fixed_height_major=0x7f07002a;
-        public static final int dialog_fixed_height_minor=0x7f07002b;
-        public static final int dialog_fixed_width_major=0x7f07002c;
-        public static final int dialog_fixed_width_minor=0x7f07002d;
-        public static final int disabled_alpha_material_dark=0x7f07002e;
-        public static final int disabled_alpha_material_light=0x7f07002f;
-        public static final int home_button_sidemargin=0x7f070030;
+        public static final int bottom_button_margin=0x7f070027;
+        public static final int button_side_padding=0x7f070028;
+        public static final int button_top_margin=0x7f070029;
+        public static final int button_top_padding=0x7f07002a;
+        public static final int dialog_fixed_height_major=0x7f07002b;
+        public static final int dialog_fixed_height_minor=0x7f07002c;
+        public static final int dialog_fixed_width_major=0x7f07002d;
+        public static final int dialog_fixed_width_minor=0x7f07002e;
+        public static final int disabled_alpha_material_dark=0x7f07002f;
+        public static final int disabled_alpha_material_light=0x7f070030;
+        public static final int home_button_sidemargin=0x7f070031;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -1311,12 +1312,14 @@ containing a value of this type.
         public static final int custom_home_button_selected=0x7f020034;
         public static final int custom_home_button_selector=0x7f020035;
         public static final int green_icon=0x7f020036;
-        public static final int heartratemonitorlogo=0x7f020037;
-        public static final int ic_launcher=0x7f020038;
-        public static final int icon=0x7f020039;
-        public static final int red_icon=0x7f02003a;
-        public static final int stroke=0x7f02003b;
-        public static final int textcolorhome=0x7f02003c;
+        public static final int handposition=0x7f020037;
+        public static final int heartratemonitorlogo=0x7f020038;
+        public static final int ic_launcher=0x7f020039;
+        public static final int icon=0x7f02003a;
+        public static final int phone=0x7f02003b;
+        public static final int red_icon=0x7f02003c;
+        public static final int stroke=0x7f02003d;
+        public static final int textcolorhome=0x7f02003e;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;
@@ -1355,18 +1358,18 @@ containing a value of this type.
         public static final int icon=0x7f080026;
         public static final int ifRoom=0x7f080018;
         public static final int image=0x7f080023;
-        public static final int imageSwitcher=0x7f08004d;
+        public static final int imageSwitcher=0x7f08004b;
         public static final int layout=0x7f080045;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
         public static final int maintitle=0x7f080043;
         public static final int middle=0x7f080015;
         public static final int never=0x7f080019;
-        public static final int nextButton=0x7f08004b;
+        public static final int nextButton=0x7f08004c;
         public static final int none=0x7f08000e;
         public static final int normal=0x7f08000a;
         public static final int preview=0x7f080048;
-        public static final int previousButton=0x7f08004c;
+        public static final int previousButton=0x7f08004d;
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int quickMeasurementButton=0x7f080044;
@@ -1462,7 +1465,9 @@ containing a value of this type.
         public static final int nextbutton=0x7f0a001a;
         public static final int nobutton=0x7f0a001b;
         public static final int previousbutton=0x7f0a001c;
-        public static final int yesbutton=0x7f0a001d;
+        public static final int tutorial_1=0x7f0a001d;
+        public static final int tutorial_2=0x7f0a001e;
+        public static final int yesbutton=0x7f0a001f;
     }
     public static final class style {
         public static final int Base_TextAppearance_AppCompat=0x7f0b0000;

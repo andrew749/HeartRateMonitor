@@ -52,17 +52,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.andrew749.heart_rate_monitor.Activities.History"
-            android:configChanges="keyboardHidden|orientation"
-            android:parentActivityName="com.andrew749.heart_rate_monitor.Activities.Home"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.andrew749.heart_rate_monitor.Activities.Home"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -36,7 +37,9 @@ public class Home extends Activity implements View.OnClickListener {
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         try {
             String versionName = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
-            if (settings.getString("versionname", "0").equals(versionName)) {
+            String lastVersion =settings.getString("versionname","0");
+
+            if (!lastVersion.equalsIgnoreCase(versionName)) {
                 //the app is being launched for first time, do something
                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
                 dialogBuilder.setTitle(getString(R.string.first_time_dialog_title));
@@ -83,7 +86,8 @@ public class Home extends Activity implements View.OnClickListener {
 
     public void runTutorial() {
         ArrayList<TutorialEntry> entries = new ArrayList<TutorialEntry>();
-        entries.add(new TutorialEntry(R.drawable.heartratemonitorlogo, "Hello world"));
+        entries.add(new TutorialEntry(R.drawable.phone, getString(R.string.tutorial_1)));
+        entries.add(new TutorialEntry(R.drawable.handposition,getString(R.string.tutorial_2)));
         Intent intent = new Intent(getApplicationContext(), TutorialsCardActivity.class);
         intent.putExtra("entries", entries);
         startActivity(intent);

@@ -23,11 +23,11 @@
         <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-144dbeee997913f2e3904b540ccf9172fdc72a40.jar" />
     </item>
     <item
-        jar="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/cardlibrary/unspecified/classes.jar"
+        jar="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/HeartRateMonitor/tutorialcardlibrary/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="f804f5b44f1e9812d5168e61d2c1abb2c8e9e6e5">
-        <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-d64e2a5865f0024299fe83dc0370563bb5ba94c1.jar" />
+        sha1="5db2f29db7f4a7fe181b2a3d39c9f17cff21fec7">
+        <dex dex="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-aa91c82e6b91ac24cb168b709661596b87fc67f4.jar" />
     </item>
     <item
         jar="/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"

@@ -1,6 +1,6 @@
 /home/andrew/Projects/HeartRateMonitor/app/build/intermediates/classes/debug
 /home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-c3e3ed59647c97c80d1eedb3c76dac4f9fa1d196.jar
-/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-d64e2a5865f0024299fe83dc0370563bb5ba94c1.jar
+/home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-aa91c82e6b91ac24cb168b709661596b87fc67f4.jar
 /home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/achartengine-1.1.0-2cdb572cb878566fdfb795062b9d49ff29bb1b95.jar
 /home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-0bb51cf593fdf38da027f9b74c8262bb5d87feb4.jar
 /home/andrew/Projects/HeartRateMonitor/app/build/intermediates/pre-dexed/debug/classes-a8e9b14716432fd6f1deecca833b1c03efb92af2.jar
